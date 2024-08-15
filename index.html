@@ -7,5 +7,25 @@
 </head>
 <body>
     <h1>Hello, World!</h1>
+
+    <!-- Dropdown Menu -->
+    <label for="number-select">Select a number:</label>
+    <select id="number-select" name="number">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <!-- Submit Button -->
+    <button id="submit-button" onclick="handleSubmit()">Submit</button>
+
+    <script>
+        function handleSubmit() {
+            const selectedNumber = document.getElementById('number-select').value;
+            alert('You selected: ' + selectedNumber);
+        }
+    </script>
 </body>
 </html>
